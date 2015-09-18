@@ -1,0 +1,122 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.leftpark.android.notificationtest.MainActivity" >
+
+    <TextView
+	        android:id="@+id/tv_progress_summary"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	        android:gravity="bottom"
+	        android:textSize="10sp"
+	        android:text="@string/progress_summary"/>
+    
+    <LinearLayout
+        android:id="@+id/ll_repeat_test"
+        android:layout_width = "wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+    
+	    <EditText
+	        android:id="@+id/et_sleep"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:hint="sleep(ms)"
+	        android:inputType="number"/>
+	    
+	    <EditText
+	        android:id="@+id/et_count"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:hint="counts"
+	        android:inputType="number"/>
+	    
+	    <Button
+	        android:id="@+id/btn_noti1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Start Repeat"/>
+    
+    </LinearLayout>
+    
+    <TextView
+	        android:id="@+id/tv_repeat_summary"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	        android:gravity="bottom"
+	        android:textSize="10sp"
+	        android:text="@string/repeat_summary"/>
+    
+   <LinearLayout
+        android:id="@+id/ll_progress"
+        android:layout_width = "wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+	    
+       <EditText
+	        android:id="@+id/et_progress_sleep"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:hint="sleep(ms)"
+	        android:inputType="number"/>
+	    
+        <EditText
+	        android:id="@+id/et_progress_max"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:hint="max"
+	        android:inputType="number"/>
+    
+	    <TextView
+	        android:id="@+id/tv_progress"
+	        android:layout_width="150dp"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:textSize="20sp"
+	        android:text="0 / 0"/>
+	    
+	    <Button
+	        android:id="@+id/btn_prograss"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Start Progress"/>
+    
+    </LinearLayout>
+    
+   <TextView
+	        android:id="@+id/tv_bcast_summary"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp"
+	        android:gravity="bottom"
+	        android:textSize="10sp"
+	        android:text="@string/bcast_summary"/>
+    
+   <LinearLayout
+        android:id="@+id/ll_bcast_test"
+        android:layout_width = "wrap_content"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+    
+	    <EditText
+	        android:id="@+id/et_bcast_sleep"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:hint="sleep(ms)"
+	        android:inputType="number"/>
+
+	    
+	    <Button
+	        android:id="@+id/btn_bcast"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Start Broadcast"/>
+    
+    </LinearLayout>
+
+</LinearLayout>
